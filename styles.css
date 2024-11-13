@@ -1,0 +1,62 @@
+.label {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 12px;
+    padding: 2px 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .movable {
+    position: absolute;
+    cursor: move;
+    width: 100px;
+    height: auto;
+  }
+#canvasContainer {
+  position: relative;
+  display: inline-block;
+}
+
+#video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: scaleX(-1); */
+}
+
+#overlayCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Ensures canvas doesn't interfere with user input */
+}
+#captureBtn {
+  position: absolute;
+  top: 0px;
+  left: 10vw;
+  z-index: 10;
+}
+
+#timerContainer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#timer {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+#timerButtons button {
+  margin: 5px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Capture and Drag</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+  
+</head>
+<body>
+  <div id="canvasContainer">
+    <video id="video" width="video.videoWidth" height="video.videoHeight" autoplay></video>
+    <canvas id="overlayCanvas" width="320" height="240"></canvas>
+  </div>
+  <button id="captureBtn">^_^</button>
+
+  <!-- <div id="timerContainer">
+    <div id="timer">01:00</div>
+    <div id="timerButtons">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn">Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div> -->
+
+  <!-- ml5.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/ml5@0.6.0/dist/ml5.min.js"></script>
+  <!-- Main JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
